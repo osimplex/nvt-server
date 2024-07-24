@@ -1,0 +1,109 @@
+## Network virtual terminal config
+
+LogMode = 1
+Handler = "tui"
+Worker  = "oracle"
+Server  = "telnet"
+
+[ServerOpts.telnet]
+    Addr = ":23"
+
+[HandlerOpts.tui.Opts]
+    FirstFrame      = "<frame name>"
+    ExitTransaction = "<transaction>"
+    KeyEnter        = "ENTER"
+    KeyF1           = "F1"
+    KeyF2           = "F2"
+    KeyF3           = "F3"
+    KeyF4           = "F4"
+    KeyArrowUp      = "UP"
+    KeyArrowDown    = "DOWN"
+    KeyArrowRight   = "RIGHT"
+    KeyArrowLeft    = "LEFT"
+
+[WorkerOpts.oracle.Opts]
+    TnsNames       = "path/to/file"
+    User           = "<database user>"
+    Password       = "<database password>"
+    Alias          = "<TNS names conn alias>"
+    MaxIdleConns   = "<number>"
+    MaxOpenConns   = "<number>"
+    ConnMaxIdleMin = "<conn max idle time in minutes>"
+
+[WorkerAliases.oracle.FrameSource]
+    Source = "table_name"
+
+    FrameNameAlias  = "column_name"
+    ClassAlias      = "column_name"
+    DeviceTypeAlias = "column_name"
+    InputFrameAlias = "column_name"
+
+    Line1Alias      = "column_name"
+    Line2Alias      = "column_name"
+    Line3Alias      = "column_name"
+    Line4Alias      = "column_name"
+    Line5Alias      = "column_name"
+    Line6Alias      = "column_name"
+    Line7Alias      = "column_name"
+    Line8Alias      = "column_name"
+
+[WorkerAliases.oracle.FrameCommandSource]
+    Source = "table_name"
+
+    FrameNameAlias   = "column_name"
+    CommandAlias     = "column_name"
+    TransactionAlias = "column_name"
+    FrameRefAlias    = "column_name"
+
+[WorkerAliases.oracle.ProcedureSource]
+    Source = "table_name"
+
+    ClientAddrAlias        = "column_name"
+    TransactionAlias       = "column_name"
+    InputAlias             = "column_name"
+    SearchTypeAlias        = "column_name"
+    BeepAlias              = "column_name"
+    FrameNameAlias         = "column_name"
+    PreviousFrameNameAlias = "column_name"
+
+    Rv01Alias              = "column_name"
+    Rv02Alias              = "column_name"
+    Rv03Alias              = "column_name"
+    Rv04Alias              = "column_name"
+    Rv05Alias              = "column_name"
+    Rv06Alias              = "column_name"
+    Rv07Alias              = "column_name"
+    Rv08Alias              = "column_name"
+    Rv09Alias              = "column_name"
+    Rv10Alias              = "column_name"
+    Rv11Alias              = "column_name"
+    Rv12Alias              = "column_name"
+    Rv13Alias              = "column_name"
+    Rv14Alias              = "column_name"
+    Rv15Alias              = "column_name"
+    Rv16Alias              = "column_name"
+    Rv17Alias              = "column_name"
+    Rv18Alias              = "column_name"
+    Rv19Alias              = "column_name"
+    Rv20Alias              = "column_name"
+    Rv21Alias              = "column_name"
+    Rv22Alias              = "column_name"
+    Rv23Alias              = "column_name"
+    Rv24Alias              = "column_name"
+    Rv25Alias              = "column_name"
+    Rv26Alias              = "column_name"
+    Rv27Alias              = "column_name"
+    Rv28Alias              = "column_name"
+    Rv29Alias              = "column_name"
+    Rv30Alias              = "column_name"
+    Rv31Alias              = "column_name"
+    Rv32Alias              = "column_name"
+
+    Rl1Alias               = "column_name"
+    Rl2Alias               = "column_name"
+    Rl3Alias               = "column_name"
+    Rl4Alias               = "column_name"
+    Rl5Alias               = "column_name"
+    Rl6Alias               = "column_name"
+    Rl7Alias               = "column_name"
+    Rl8Alias               = "column_name"

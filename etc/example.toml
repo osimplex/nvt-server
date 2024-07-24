@@ -1,0 +1,9 @@
+## Network virtual terminal system config
+
+LogMode = 1
+Handler = "example"
+# Worker  = "any"
+Server  = "telnet"
+
+[ServerOpts.telnet]
+    Addr = ":23000"
